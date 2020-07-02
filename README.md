@@ -21,3 +21,14 @@ RMySQL_0.10.20
 DBI_1.1.0          
 shiny_1.5.0        
 shinythemes_1.1.2 
+
+
+## But du programme
+
+Interface graphique relié à une base de donnée en local permettant :
+- d'afficher un graphique de type histogramme sur les questions numériques
+  - exporter le graphique en PNG ou PDF
+- d'afficher les verbatims des questions textuelles
+  - export vers CSV, EXCEL, PDF, PRINTER, COPY
+- afficher un dataframe avec toutes les réponses d'un étudiant
+  - export vers CSV, EXCEL, PDF, PRINTER, COPY
