@@ -32,3 +32,5 @@ Interface graphique relié à une base de donnée en local permettant :
   - export vers CSV, EXCEL, PDF, PRINTER, COPY
 - afficher un dataframe avec toutes les réponses d'un étudiant
   - export vers CSV, EXCEL, PDF, PRINTER, COPY
+
+Possibilité de changer la couleur du graphique et la taille des barres.
