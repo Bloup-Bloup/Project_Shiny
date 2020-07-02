@@ -30,6 +30,7 @@ shinyUI(fluidPage(
     conditionalPanel(condition = "input.tabselected ==2",
                      selectInput("name2", "Name",
                                  choices =  c(setNames(recup_nom_eleves2()$id, paste(recup_nom_eleves2()$nom, recup_nom_eleves2()$prenom, sep=" "))))
+                    
     )
   ),
   mainPanel(
