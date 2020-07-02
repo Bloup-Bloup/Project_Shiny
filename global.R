@@ -3,6 +3,7 @@ library(tidyverse)
 library(shiny)
 library(shinythemes)
 library(DT)
+library(shinyWidgets)
 
 con <- dbConnect(MySQL(), host="localhost", user="root", password="root", dbname="evaluation")
 
@@ -111,7 +112,7 @@ recup_ <- function(id){
 # Récupère le texte ou le score pour une formation donnée
 get_data <- function(id_formation, id_question){
   tbl(con,
-      sql(paste("select reponse.score, question.libelle, reponse.texte
+      sql(paste("select reponse.score, question.libelle, reponse.texte as reponse
                  FROM choix
                  INNER JOIN reponse as reponse_formation
                  ON reponse_formation.choix_id = choix.id
