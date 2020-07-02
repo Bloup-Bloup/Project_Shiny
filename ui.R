@@ -5,7 +5,7 @@ shinyUI(fluidPage(
 
   # Permet d'insérer un logo et un titre grâce aux requêtes HTML
   navbarPage(tags$script(HTML("var header = $('.navbar > .container-fluid');
-  header.append('<div style=\"float:left\"><ahref=\"www.cefim.eu\"><img src=\"test.png\" alt=\"alt\" style=\"float:left;width:55px;height:55px;padding-top:5px;\"> </a>`</div> <div><h2 style = \"color:white;\">Dahboard reponses au formulaire</h2></div>');"))
+  header.append('<div style=\"float:left\"><ahref=\"www.cefim.eu\"><img src=\"test.png\" alt=\"alt\" style=\"float:left;width:55px;height:55px;padding-top:5px;\"> </a>`</div> <div><h2 style = \"color:white;\">Dashboard reponses au formulaire</h2></div>');"))
              ),   
   
   
