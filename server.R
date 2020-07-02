@@ -1,4 +1,9 @@
 function(session, input, output) {
+  onStop(function(){
+    dbDisconnect(con)
+  })
+  
+  
   observeEvent(
     input$page,
     updateSelectInput(session, "questions", "question",

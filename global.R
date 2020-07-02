@@ -6,7 +6,7 @@ library(DT)
 library(shinyWidgets)
 
 con <- dbConnect(MySQL(), host="localhost", user="root", password="root", dbname="evaluation")
-
+#lapply(dbListConnections(MySQL()), dbDisconnect)
 
 
 
@@ -126,3 +126,5 @@ get_data <- function(id_formation, id_question){
                  and choix.id = ",id_formation," and reponse.question_id = ",id_question))
   ) %>% collect()
 }
+
+?geom_histogram

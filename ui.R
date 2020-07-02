@@ -9,8 +9,8 @@ shinyUI(fluidPage(
              ),   
   
   
-
-  
+  chooseSliderSkin("Modern"),
+  setSliderColor('#f85d28',1),
   
   
   
